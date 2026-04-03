@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       <header>
-        {/* <Navbar></Navbar> */}
         <NavbarCoustom></NavbarCoustom>
+        <Navbar></Navbar>
       </header>
       <main></main>
     </>

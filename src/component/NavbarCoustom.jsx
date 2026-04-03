@@ -1,5 +1,6 @@
 import React from "react";
 import Links from "./Links";
+import { Menu } from "lucide-react";
 
 const links = [
   {
@@ -31,12 +32,17 @@ const links = [
 
 const NavbarCoustom = () => {
   return (
-    <nav>
-      <ul className="flex gap-[20px] justify-between mx-auto w-11/12 my-4">
+    <nav className="flex gap-5 justify-between mx-auto w-11/12 my-4">
+      <span className="flex gap-3">
+        <Menu></Menu>
+        <h3>Logo</h3>
+      </span>
+      <ul className="flex gap-5">
         {links.map((route) => (
-          <Links route={route}></Links>
+          <Links route={route} key={route.id}></Links>
         ))}
       </ul>
+      <button>Sign in</button>
     </nav>
 
     // <ul className="flex gap-[20px] justify-between mx-auto w-11/12 my-4">
