@@ -1,9 +1,10 @@
-import { Suspense } from "react";
+import { Suspense, use } from "react";
 import "./App.css";
 import Navbar from "./component/navbar";
 import NavbarCoustom from "./component/NavbarCoustom";
+import PricingOption from "./assets/pricing/pricingOption";
 
-const promisData = fetch("pricingData.json").then(res => res.json());
+const promisData = fetch("pricingData.json").then(res => res.json())
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       </header>
       <main>
         <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-          <pricingOption promisData={promisData}></pricingOption>
+          <PricingOption promisData={promisData}></PricingOption>
         </Suspense>
       </main>
     </>
