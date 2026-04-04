@@ -1,0 +1,43 @@
+{
+  "pricing": [
+    {
+      "id": 1,
+      "name": "Basic Plan",
+      "price": 10,
+      "currency": "USD",
+      "duration": "month",
+      "features": [
+        "1 Website",
+        "Basic Support",
+        "5GB Storage"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Standard Plan",
+      "price": 25,
+      "currency": "USD",
+      "duration": "month",
+      "features": [
+        "5 Websites",
+        "Priority Support",
+        "50GB Storage",
+        "Free SSL"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Premium Plan",
+      "price": 50,
+      "currency": "USD",
+      "duration": "month",
+      "features": [
+        "Unlimited Websites",
+        "24/7 Support",
+        "200GB Storage",
+        "Free SSL",
+        "Daily Backup"
+      ]
+    }
+  ]
+}

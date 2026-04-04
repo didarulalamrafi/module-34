@@ -40,7 +40,13 @@ const NavbarCoustom = () => {
       <span className="flex gap-3 md:hidden">
         <span onClick={() => setOpne(!opne)}>
           {opne ? <X></X> : <Menu></Menu>}
-          <ul>{navLinks}</ul>
+          <ul className={`md:hidden absolute duration-1000 p-2  rounded-xl
+             bg-red-600 
+             ${opne? 'top-14': '-top-60'}`}>
+            {
+              navLinks
+            }
+            </ul>
         </span>
       </span>
       <h3>Logo</h3>
